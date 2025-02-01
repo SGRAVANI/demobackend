@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors({
-origin:'http://localhost:5173'
+origin:['http://localhost:5173','https://demofrontend-alpha.vercel.app/']
 }))
 // app.use("/",(req,res)=>{
 //     //res.send("hello world")
